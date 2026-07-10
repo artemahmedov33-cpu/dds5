@@ -119,7 +119,7 @@ body.nav-open .overlay{opacity:1;visibility:visible}
 .hero .orb{position:absolute;border-radius:50%;filter:blur(60px);opacity:.5;z-index:0;pointer-events:none}
 .hero .orb.o1{width:420px;height:420px;background:radial-gradient(circle,#e7c9ac,transparent 70%);top:-120px;right:-60px;animation:floatA 15s ease-in-out infinite}
 .hero .orb.o2{width:360px;height:360px;background:radial-gradient(circle,#d8b394,transparent 70%);bottom:-140px;left:-80px;animation:floatB 18s ease-in-out infinite}
-.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;padding:74px 24px 88px}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;padding:56px 24px 62px}
 .hero .tag{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--brown);font-weight:700;
   background:rgba(255,255,255,.7);border:1px solid var(--line);padding:8px 16px;border-radius:40px;margin-bottom:22px;box-shadow:var(--shadow-sm)}
 .hero .tag i{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(176,122,94,.22);flex:0 0 auto}
@@ -133,7 +133,7 @@ body.nav-open .overlay{opacity:1;visibility:visible}
 .hero .stats{display:flex;gap:38px;margin-top:46px;flex-wrap:wrap}
 .hero .stats div b{font-family:'Playfair Display',serif;font-size:38px;color:var(--brown);display:block;line-height:1}
 .hero .stats div span{font-size:13px;color:var(--muted);display:block;margin-top:6px}
-.heroart{position:relative;aspect-ratio:1/1;max-width:440px;justify-self:center;width:100%}
+.heroart{position:relative;aspect-ratio:1/1;max-width:530px;justify-self:center;width:100%}
 .heroart .disc{position:absolute;inset:0;border-radius:38% 62% 58% 42%/48% 42% 58% 52%;background:radial-gradient(circle at 60% 32%,#fff 0%,#f0e0d2 55%,#e2ccbb 100%);box-shadow:var(--shadow-lg);animation:morph 16s ease-in-out infinite}
 .heroart .ring{position:absolute;inset:12px;border-radius:50%;border:1.5px dashed rgba(176,122,94,.3);animation:spin 60s linear infinite}
 .heroart .portrait{position:absolute;inset:8%;border-radius:50%;overflow:hidden;border:5px solid #fff;box-shadow:var(--shadow-md)}
@@ -145,8 +145,8 @@ body.nav-open .overlay{opacity:1;visibility:visible}
 .heroart .b3{bottom:-3%;left:22%;animation:floatA 8s ease-in-out infinite .5s}
 
 /* SECTION SHELL */
-section{padding:88px 0;position:relative}
-.shead{text-align:center;max-width:720px;margin:0 auto 52px}
+section{padding:58px 0;position:relative}
+.shead{text-align:center;max-width:720px;margin:0 auto 34px}
 .k{display:inline-block;font-size:12.5px;letter-spacing:3px;text-transform:uppercase;color:var(--brown2);font-weight:700}
 .shead .k{margin-bottom:14px}
 .shead .k::after{content:"";display:block;width:34px;height:2px;margin:11px auto 0;background:linear-gradient(90deg,transparent,var(--gold),transparent);border-radius:2px}
@@ -172,8 +172,9 @@ section{padding:88px 0;position:relative}
 .about h2{font-size:clamp(28px,3.2vw,40px);color:var(--brown);margin-bottom:22px;line-height:1.15}
 .about p{color:var(--brown2);margin-bottom:16px;font-size:16px}
 .about .feats{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
-.about .feats div{background:#fff;border-radius:var(--r-md);padding:20px;border:1px solid var(--line);transition:transform .3s var(--ease),box-shadow .3s}
-.about .feats div:hover{transform:translateY(-4px);box-shadow:var(--shadow-sm)}
+.about .feats a{display:block;background:#fff;border-radius:var(--r-md);padding:20px;border:1px solid var(--line);cursor:pointer;transition:transform .3s var(--ease),box-shadow .3s,border-color .3s}
+.about .feats a:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--accent)}
+.about .feats a:hover b{color:var(--accent2)}
 .about .feats b{display:block;color:var(--brown);font-family:'Playfair Display',serif;font-size:18px;margin-bottom:4px}
 .about .feats span{font-size:14px;color:var(--muted)}
 .aboutart{position:relative;aspect-ratio:4/5;border-radius:26px;overflow:hidden;box-shadow:var(--shadow-lg)}
@@ -269,7 +270,7 @@ section{padding:88px 0;position:relative}
 
 /* GALLERY */
 .gallery .grid-g{columns:4;column-gap:16px}
-.gallery .grid-g img{width:100%;border-radius:14px;margin-bottom:16px;display:block;break-inside:avoid;transition:transform .4s var(--ease),box-shadow .4s;cursor:zoom-in;background:var(--bg2)}
+.gallery .grid-g img{width:100%;height:auto;border-radius:14px;margin-bottom:16px;display:block;break-inside:avoid;transition:transform .4s var(--ease),box-shadow .4s;cursor:zoom-in;background:var(--bg2)}
 .gallery .grid-g img:hover{transform:scale(1.02);box-shadow:var(--shadow-md)}
 .lb{position:fixed;inset:0;background:rgba(30,20,16,.92);z-index:150;display:none;align-items:center;justify-content:center;padding:30px;cursor:zoom-out}
 .lb.open{display:flex}
@@ -303,7 +304,7 @@ section{padding:88px 0;position:relative}
 .cinfo .item b{display:block;color:var(--brown);font-size:16px;margin-bottom:3px}
 .cinfo .item span,.cinfo .item a{color:var(--muted);font-size:15px;display:block;line-height:1.75}
 .cinfo .item a:hover{color:var(--brown2)}
-.cmap{border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line);min-height:420px;position:relative;background:#e8ddd4}
+.cmap{border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line);min-height:560px;position:relative;background:#e8ddd4}
 .cmap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .cmap .maplink{position:absolute;top:10px;left:10px;z-index:2;background:#fff;padding:8px 14px;border-radius:10px;font-size:13px;font-weight:600;color:var(--brown);box-shadow:var(--shadow-sm)}
 .cmap .maplink:hover{color:var(--brown2)}
@@ -350,11 +351,11 @@ footer .disc{padding-top:24px;font-size:12px;color:rgba(244,233,224,.68);line-he
   .hcontact{display:none}
 }
 @media(max-width:920px){
-  section{padding:70px 0}
+  section{padding:52px 0}
   nav.main{display:none}
   .menutoggle{display:block}
-  .hero .wrap{grid-template-columns:1fr;gap:36px;padding:56px 24px 66px}
-  .heroart{max-width:330px;margin-inline:auto}
+  .hero .wrap{grid-template-columns:1fr;gap:32px;padding:44px 24px 52px}
+  .heroart{max-width:400px;margin-inline:auto}
   .about .wrap,.contact .wrap{grid-template-columns:1fr;gap:36px}
   .aboutart{max-width:440px;order:-1}
   .svc,.equip .grid,.promo .grid,.rev .grid{grid-template-columns:1fr 1fr}
@@ -363,11 +364,11 @@ footer .disc{padding-top:24px;font-size:12px;color:rgba(244,233,224,.68);line-he
   footer .top{grid-template-columns:1fr 1fr}
 }
 @media(max-width:640px){
-  section{padding:58px 0}
+  section{padding:42px 0}
   .hrow{height:66px}
   .navpanel{padding-top:88px}
   .hactions .btn.sm{display:none}
-  .shead{margin-bottom:38px}
+  .shead{margin-bottom:28px}
   .svc,.equip .grid,.promo .grid,.rev .grid,.about .feats{grid-template-columns:1fr}
   .spec{flex:0 0 86%}
   .tc-prev{left:2px}.tc-next{right:2px}
@@ -534,10 +535,10 @@ footer .disc{padding-top:24px;font-size:12px;color:rgba(244,233,224,.68);line-he
       <p>Клиника косметологии доктора Дыбалюк в Волжском — это продолжение известного косметологического центра с безупречной репутацией «Lady Di». Мы решаем эстетические задачи лица и тела, боремся с возрастными изменениями и лечим различные заболевания кожи.</p>
       <p>Нашим клиентам доступны как традиционные процедуры экспертного уровня, так и уникальные нововведения, не представленные больше нигде в Волжском. Мы дорожим своей репутацией и гарантируем качество препаратов и правильность назначений.</p>
       <div class="feats">
-        <div><b>Лицензия</b><span>Официальная медицинская лицензия</span></div>
-        <div><b>Оборудование</b><span>Ведущие производители мира</span></div>
-        <div><b>Сервис</b><span>Высочайший уровень ухода</span></div>
-        <div><b>Цены</b><span>Лояльный ценовой диапазон</span></div>
+        <a href="#faq"><b>Лицензия</b><span>Официальная медицинская лицензия</span></a>
+        <a href="#equip"><b>Оборудование</b><span>Ведущие производители мира</span></a>
+        <a href="#services"><b>Сервис</b><span>Высочайший уровень ухода</span></a>
+        <a href="#prices"><b>Цены</b><span>Лояльный ценовой диапазон</span></a>
       </div>
     </div>
   </div>
