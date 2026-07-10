@@ -18,12 +18,12 @@
 <meta property="og:title" content="Клиника косметологии доктора Дыбалюк — Волжский">
 <meta property="og:description" content="Территория красоты, молодости и здоровья. Экспертная косметология для лица и тела, anti-age методики, лицензированное оборудование. Запись: 8 (961) 070-99-90.">
 <meta property="og:url" content="https://www.clinica-dds.ru/">
-<meta property="og:image" content="https://www.clinica-dds.ru/img/hero-portrait.png">
+<meta property="og:image" content="https://www.clinica-dds.ru/img/hero-portrait.jpg">
 <meta property="og:image:alt" content="Клиника косметологии доктора Дыбалюк — Волжский">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Клиника косметологии доктора Дыбалюк — Волжский">
 <meta name="twitter:description" content="Экспертная косметология для лица и тела, anti-age методики, лицензированное оборудование. Запись: 8 (961) 070-99-90.">
-<meta name="twitter:image" content="https://www.clinica-dds.ru/img/hero-portrait.png">
+<meta name="twitter:image" content="https://www.clinica-dds.ru/img/hero-portrait.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +41,7 @@
   --r-sm:14px;--r-md:18px;--r-lg:22px;--r-xl:30px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:96px;-webkit-text-size-adjust:100%}
+html{scroll-behavior:smooth;scroll-padding-top:96px;-webkit-text-size-adjust:100%;overflow-x:hidden}
 body{font-family:'Inter','Segoe UI',system-ui,sans-serif;color:var(--text);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 body.nav-open,body.lb-open{overflow:hidden}
 body::after{content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.022;
@@ -198,8 +198,8 @@ section{padding:46px 0;position:relative}
 .spec-photo{aspect-ratio:1/1;overflow:hidden;background:linear-gradient(135deg,#e9d8c9,#cdb19c)}
 .spec-photo img{width:100%;height:100%;object-fit:cover;object-position:center 12%;transition:transform .6s var(--ease)}
 .spec:hover .spec-photo img{transform:scale(1.05)}
-.spec-photo.zoom img{object-position:center 4%;transform:scale(1.32);transform-origin:center 24%}
-.spec:hover .spec-photo.zoom img{transform:scale(1.38)}
+.spec-photo.zoom img{object-position:center 10%;transform:scale(1.18);transform-origin:center 20%}
+.spec:hover .spec-photo.zoom img{transform:scale(1.24)}
 .spec-body{padding:24px 24px 26px;display:flex;flex-direction:column;flex:1}
 .spec-body h3{font-size:19px;color:var(--brown);margin-bottom:6px;line-height:1.2}
 .spec .role{font-size:11.5px;letter-spacing:.5px;text-transform:uppercase;color:var(--brown2);font-weight:700;margin-bottom:16px}
@@ -342,7 +342,7 @@ footer .disc{padding-top:24px;font-size:12px;color:rgba(244,233,224,.68);line-he
 .call-cta:hover{transform:scale(1.04)}
 
 /* REVEAL */
-.reveal{opacity:0;transform:translateY(32px);transition:opacity .75s var(--ease),transform .75s var(--ease)}
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .55s var(--ease),transform .55s var(--ease)}
 .reveal.left{transform:translateX(-42px)}
 .reveal.right{transform:translateX(42px)}
 .reveal.zoom{transform:scale(.93)}
@@ -373,6 +373,9 @@ footer .disc{padding-top:24px;font-size:12px;color:rgba(244,233,224,.68);line-he
   .hrow{height:66px}
   .navpanel{padding-top:88px}
   .hactions .btn.sm{display:none}
+  .hero .wrap{padding:20px 18px 30px;gap:20px}
+  .heroart{max-width:250px}
+  .reveal.left,.reveal.right{transform:translateY(28px)}
   .shead{margin-bottom:28px}
   .svc,.equip .grid,.promo .grid,.rev .grid,.about .feats{grid-template-columns:1fr}
   .spec{flex:0 0 86%}
@@ -497,7 +500,7 @@ footer .disc{padding-top:24px;font-size:12px;color:rgba(244,233,224,.68);line-he
       <div class="disc"></div>
       <div class="ring"></div>
       <div class="portrait">
-        <img src="img/hero-portrait.png" alt="Дыбалюк Светлана Николаевна — главный врач клиники косметологии" width="440" height="440" fetchpriority="high">
+        <img src="img/hero-portrait.jpg" alt="Дыбалюк Светлана Николаевна — главный врач клиники косметологии" width="440" height="440" fetchpriority="high">
       </div>
       <div class="badge b1"><svg class="svgi"><use href="#ic-shield"/></svg> Медицинская лицензия</div>
       <div class="badge b2"><svg class="svgi"><use href="#ic-star"/></svg> 35+ процедур на Scarlet S</div>
@@ -531,7 +534,7 @@ footer .disc{padding-top:24px;font-size:12px;color:rgba(244,233,224,.68);line-he
   <div class="wrap">
     <div class="aboutart reveal left">
       <span class="deco">Lady Di</span>
-      <img src="img/hero-portrait.png" alt="Дыбалюк Светлана Николаевна — владелица и главный врач клиники" width="440" height="550" loading="lazy">
+      <img src="img/hero-portrait.jpg" alt="Дыбалюк Светлана Николаевна — владелица и главный врач клиники" width="440" height="550" loading="lazy">
       <div class="q"><b>Дыбалюк Светлана Николаевна</b><span>Владелица, главный врач — дерматокосметолог</span></div>
     </div>
     <div class="reveal right">
@@ -560,7 +563,7 @@ footer .disc{padding-top:24px;font-size:12px;color:rgba(244,233,224,.68);line-he
     <div class="tc reveal">
       <div class="tc-track" id="teamTrack">
         <article class="spec">
-          <div class="spec-photo"><img src="img/team-dybaluk-svetlana.png" alt="Дыбалюк Светлана Николаевна" width="504" height="504" loading="lazy"></div>
+          <div class="spec-photo"><img src="img/team-dybaluk-svetlana.jpg" alt="Дыбалюк Светлана Николаевна" width="504" height="504" loading="lazy"></div>
           <div class="spec-body">
             <h3>Дыбалюк Светлана Николаевна</h3>
             <span class="role">Владелица · главный врач · дерматокосметолог</span>
@@ -580,7 +583,7 @@ footer .disc{padding-top:24px;font-size:12px;color:rgba(244,233,224,.68);line-he
           </div>
         </article>
         <article class="spec">
-          <div class="spec-photo"><img src="img/team-kupriyanova.png" alt="Куприянова Ксения Юрьевна" width="504" height="504" loading="lazy"></div>
+          <div class="spec-photo"><img src="img/team-kupriyanova.jpg" alt="Куприянова Ксения Юрьевна" width="504" height="504" loading="lazy"></div>
           <div class="spec-body">
             <h3>Куприянова Ксения Юрьевна</h3>
             <span class="role">Врач-косметолог</span>
@@ -652,7 +655,7 @@ footer .disc{padding-top:24px;font-size:12px;color:rgba(244,233,224,.68);line-he
       <article class="eq reveal"><div class="eq-img"><img src="img/equip-mediostar.jpg" alt="Аппарат MeDioStar Next Pro" width="560" height="373" loading="lazy"></div><div class="eq-body"><h3>MeDioStar Next Pro <span class="pill">Лазер</span></h3><p>Безопасный и эффективный аппарат последнего поколения для лазерной эпиляции и омоложения.</p></div></article>
       <article class="eq reveal"><div class="eq-img"><img src="img/equip-elipse-light.jpg" alt="Аппарат Elipse Light" width="1067" height="1600" loading="lazy"></div><div class="eq-body"><h3>Elipse Light <span class="pill">IPL</span></h3><p>Аппарат высшего «экспертного» класса систем фотоомоложения и фотоэпиляции.</p></div></article>
       <article class="eq reveal"><div class="eq-img"><img src="img/equip-icoone.jpg" alt="Аппарат Icoone Laser" width="560" height="373" loading="lazy"></div><div class="eq-body"><h3>Icoone Laser <span class="pill">Тело</span></h3><p>2 вида лазера для сжигания жира и подтяжки кожи. Результат достигается уже после первой процедуры.</p></div></article>
-      <article class="eq reveal"><div class="eq-img"><img src="img/equip-jetpeel.png" alt="Аппарат Jet Peel" width="690" height="456" loading="lazy"></div><div class="eq-body"><h3>Jet Peel <span class="pill">Уход</span></h3><p>Отшелушивает верхние слои эпидермиса, глубоко увлажняет кожу и насыщает её кислородом.</p></div></article>
+      <article class="eq reveal"><div class="eq-img"><img src="img/equip-jetpeel.jpg" alt="Аппарат Jet Peel" width="690" height="456" loading="lazy"></div><div class="eq-body"><h3>Jet Peel <span class="pill">Уход</span></h3><p>Отшелушивает верхние слои эпидермиса, глубоко увлажняет кожу и насыщает её кислородом.</p></div></article>
       <article class="eq reveal"><div class="eq-img"><img src="img/equip-revixan.jpeg" alt="Аппарат Revixan" width="560" height="420" loading="lazy"></div><div class="eq-body"><h3>Revixan <span class="pill">PDT</span></h3><p>Фотодинамическая терапия для обновления тканей и омоложения кожи.</p></div></article>
       <article class="eq reveal"><div class="eq-img"><img src="img/equip-picosure.jpg" alt="Пикосекундный лазер PicoSure" width="560" height="560" loading="lazy"></div><div class="eq-body"><h3>PicoSure <span class="pill">Pico</span></h3><p>Пикосекундный лазер для карбонового пилинга, удаления перманентного макияжа и рубцов.</p></div></article>
       <article class="eq reveal"><div class="eq-img"><img src="img/equip-scopula.jpeg" alt="Инфракрасное одеяло Scopula" width="560" height="350" loading="lazy"></div><div class="eq-body"><h3>Инфракрасное одеяло Scopula <span class="pill">Детокс</span></h3><p>Стимулирует кровообращение, улучшает потоотделение, выводит токсины и усиливает эффект обёртываний.</p></div></article>
@@ -1014,7 +1017,7 @@ footer .disc{padding-top:24px;font-size:12px;color:rgba(244,233,224,.68);line-he
   "name":"Клиника косметологии доктора Дыбалюк",
   "description":"Клиника эстетической медицины и косметологии в Волжском: терапевтическая и аппаратная косметология, инъекции, лазерное омоложение, массаж, пилинги.",
   "url":"https://www.clinica-dds.ru/",
-  "image":"https://www.clinica-dds.ru/img/hero-portrait.png",
+  "image":"https://www.clinica-dds.ru/img/hero-portrait.jpg",
   "telephone":"+79610709990",
   "priceRange":"₽₽",
   "medicalSpecialty":"Dermatology",
@@ -1152,7 +1155,7 @@ footer .disc{padding-top:24px;font-size:12px;color:rgba(244,233,224,.68);line-he
   }catch(e){ console.error('lightbox init failed', e); }
 
   try{
-    document.querySelectorAll('.stagger').forEach(function(g){ g.querySelectorAll('.reveal').forEach(function(el,i){ el.setAttribute('data-d',(Math.min(i,8)*0.07)); }); });
+    document.querySelectorAll('.stagger').forEach(function(g){ g.querySelectorAll('.reveal').forEach(function(el,i){ el.setAttribute('data-d',(Math.min(i,6)*0.05)); }); });
 
     var reveal = function(el){ var d=parseFloat(el.getAttribute('data-d'))||0; if(reduce||d<=0){el.classList.add('in');} else {setTimeout(function(){el.classList.add('in');},d*1000);} };
     var ac = function(el){ var t=parseInt(el.getAttribute('data-count'),10)||0, s=el.getAttribute('data-suffix')||''; if(reduce){el.textContent=t+s;return;} var st=null,d=1400;
